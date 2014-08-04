@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>{{ page.title }}</title>
+	<meta name="viewport" content="width=device-width" />
+	
+	<!-- Bootstrap from bootstrapcdn.com -->
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+	
+	<!-- Local Styles -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	
+	<!-- Extra Styles -->
+	{% for style in page.extrastyles %}<link rel="stylesheet" type="text/css" href="/css/{{ style }}" />{% endfor %}
+</head>
+<body>
+	
+	{{ content }}
+	
+	<!-- jQuery from their official site -->
+	<script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+	<!-- Bootstrap plugin from bootstrapcdn.com -->
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

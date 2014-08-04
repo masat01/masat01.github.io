@@ -1,0 +1,60 @@
+@font-face {
+	font-family: Neou-Thin;
+	src: url("../fonts/Neou-Thin.otf");
+}
+
+body {
+	/* Image URLs are relative to the CSS file; .. = the containing folder */
+	background-image: url("../img/background.png");
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Neou-Thin;
+}
+
+#index-container {
+	max-width: 600px;
+	margin-top: 20%;
+}
+
+
+
+#index-nav {
+	/* rgba takes r, g and b as a number between 0 and 255, and alpha between 0 and 1 */
+	background-color: rgba(0,100,0,0.5);
+}
+#index-nav > li > a {
+	font-size: 16pt;
+	color: #fff;
+	/* The font is so light that I have to stack this three times to get any real effect */
+	text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+}
+#index-nav > li > a:hover, #index-nav > li > a:focus, #index-nav > li > a:active {
+	/* Bootstrap applies a white, rounded background by default */
+	border-radius: 0;
+	background: none;
+	
+	background-color: rgba(0,50,0,0.5);
+}
+
+#index-nav-container {
+	/* Due to the way the justification works, you can't apply margins to the nav directly */
+	margin-bottom: 20px;
+}
+
+
+
+#index-title {
+	background-color: rgba(0,70,200,0.5);
+	color: #fff;
+	font-weight: lighter;
+	text-align: center;
+	text-shadow: 0 0 5px #000, 0 0 5px #000;
+	padding: 10px;
+}
+#index-title h1 {
+	font-weight: lighter;
+	font-size: 48pt;
+}
+#index-title p {
+	font-size: 15pt;
+}

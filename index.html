@@ -1,56 +1,21 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	<title>Infinite Gaijin</title>
-	<?php
-	$images = array(
-		"IG1.jpg",
-		"IG2.jpg",
-		"IG3.jpg",
-		"IG4.jpg",
-		"IG5.jpg", //put the filenames of the images here, enclosed in double-quotes and seperated by commas
-	);
-	$image = $images[array_rand($images)];
-	?>
-	<style>
-		@font-face
-		{
-			font-family : Neou;
-			src : url(neou-thin.otf);
-		}
-		
-		body
-		{
-			background: url(<?php print $image; ?>)no-repeat center center fixed; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;;
-			font-family: Neou;
-			margin: 0;
-			align: center;
-		}
-		
-		/* table {margin: 0;}
-		
-		#banner
-		{
-			height: 200px;
-			vertical-align: center;
-			background-color: #000;
-			opacity: 0.15;
-			width: 100%;
-			font-size: 90%;
-		} */
-	</style>
-	</head>
-	<body>
-		 <table>
-			<tr>
-				<td id="banner">
-					Infinite Gaijin.
-				</td>
-			</tr>
-		</table> 
-	</body>
-</html>
+---
+layout: base
+title: Infinite Gaijin
+extrastyles:
+  - index.css
+---
+
+<div class="container" id="index-container">
+	<div id="index-nav-container">
+		<ul id="index-nav" class="nav nav-pills nav-justified">
+			<li><a href="/blog">BLOG</a></li>
+			<li><a href="https://twitter.com/InfiniteGaijin">TWITTER</a></li>
+			<li><a href="https://www.youtube.com/channel/UChAXkiZIqkQ2qknbvgq7TBg">YOUTUBE</a></li>
+			<li><a href="https://www.flickr.com/people/126417311@N07/">FLICKR</a></li>
+		</ul>
+	</div>
+	<div id="index-title">
+		<h1>INFINITE GAIJIN</h1>
+		<p>ASIA FROM AN AMERICAN'S PERSPECTIVE</p>
+	</div>
+</div>
